@@ -1,6 +1,5 @@
 # Rock-paper-scissors-lizard-Spock template
 
-import math
 import random
 
 # The key idea of this program is to equate the strings
@@ -16,6 +15,9 @@ import random
 # helper functions
 
 def name_to_number(name):
+    """
+    changes name (string) to number (int) corresponding to the choice
+    """
     # delete the following pass statement and fill in your code below
     if name == "rock":
         return 0
@@ -35,6 +37,7 @@ def name_to_number(name):
 
 
 def number_to_name(number):
+    """changes number (int) to name (string) of the choice """
     # delete the following pass statement and fill in your code below
     if number == 0:
         return "rock"
@@ -54,6 +57,10 @@ def number_to_name(number):
     
 
 def rpsls(player_choice): 
+    """
+    takes input of player choice and generates random computer choice
+    and calculates the winner
+    """
     # delete the following pass statement and fill in your code below
     
     # print a blank line to separate consecutive games
